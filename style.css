@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  background-color: #000000;
+  color: ghostwhite;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-style: normal;
+  background-color: red;
+  color: white;
+  padding: 2px;
+  margin-left: -10%;
+  margin-right: 0%;
+  z-index: 2;
+}
+.paragraph {
+  text-align: justify;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.paragraph a {
+  text-decoration: none;
+  color: gold;
+}
+.audiobox figcaption, audio {
+  padding: 15px 0px 0px 10px;
+  color: black;
+}
+.audiobox {
+  height: auto;
+  width: 100%;
+  background-color: gold;
+  margin-left:0px;
+}
+.navigation {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  background-color: #e1cfe5;
+  z-index: 0; 
+  top: 0;
+  padding-top: 10px;
+  overflow: hidden;
+}
+.navigation a,pre,p,ul {
+  display: block;
+  padding: 10px 15px 10px 15px;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.navigation a:hover {
+  color: red;
+}
+.paragraph a:hover {
+  color: red;
+}
+.main {
+  margin-left: 160px;
+  text-align: justify;
+}
+.main img {
+  max-width: 30%;
+  max-height: 30%;
+  border: thin #c0c0c0 solid;
+  padding: 5px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .navigation {padding-top: 15px;}
+  .navigation a {font-size: 18px;}
+}
+.memes figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+.memes pre {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+  width: 30%;
+}
+.memes {
+  display: block;
+  flex-flow: row wrap;
+}
